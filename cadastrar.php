@@ -7,7 +7,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(to bottom right, rgba(236, 101, 0, 0.8), rgba(255, 255, 255, 0.2));
+            background: linear-gradient(to bottom right, rgba(2,0,36,1), rgba(9,51,121,1));
             margin: 0;
             height: 100vh;
             display: flex;
@@ -23,7 +23,7 @@
         }
         .card-title {
             text-align: center;
-            color: rgba(236, 101, 0, 0.9);
+            color: rgba(2,0,36,1);
             font-weight: bold;
             margin-bottom: 20px;
         }
@@ -34,23 +34,23 @@
             text-decoration: none;
         }
         .cadastro {
-            color: rgba(236, 101, 0, 0.9);
+            color: rgba(9, 51, 121, 1);
             text-align: left;
         }
         .cadastro:hover {
-            color: rgba(236, 101, 0, 1);
+            color: rgba(9, 51, 121, 1);
             text-decoration: underline;
             font-weight: bold;
         }
         .btn-primary {
             width: 100%;
-            background-color: rgba(236, 101, 0, 0.9);
-            border-color: rgba(236, 101, 0, 0.9);
+            background-color: rgba(9, 51, 121, 1);
+            border-color: rgba(9, 51, 121, 1);
             margin-bottom: 15px;
         }
         .btn-primary:hover {
-            background-color: rgba(236, 101, 0, 1);
-            border-color: rgba(236, 101, 0, 1);
+            background-color: rgba(9, 51, 121, 0.9);
+            border-color: rgba(9, 51, 121, 0.9);
         }
     </style>
 </head>
@@ -59,7 +59,7 @@
         <div class="row justify-content-center">
             <div class="col-md-4">
                 <div class="card">
-                    <h5 class="card-title">Login de Acesso</h5>
+                    <h5 class="card-title">Cadastrar Usuário</h5>
                     <form action="conexao.php" method="POST">
                         <div class="form-group">
                             <input type="text" class="form-control" id="login" name="login" placeholder="Usuário">
@@ -67,8 +67,8 @@
                         <div class="form-group">
                             <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
                         </div>
-                        <button type="submit" class="btn btn-primary" name="btn-entrar">Entrar</button>
-                        <a href="cadastrar.php" class="cadastro">Cadastre-se</a>
+                        <button type="submit" class="btn btn-primary" name="btn-registrar">Registrar</button>
+                        <a href="login.php" class="cadastro link-danger">Cancelar</a>
                     </form>
                 </div>
             </div>

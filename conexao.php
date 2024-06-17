@@ -70,7 +70,7 @@ function SelecionarUsuarioId($id) {
     $banco = abrirBanco();
     $sql = "select * from usuario where us_id=" . $id;
     $resultado = $banco->query($sql);
-    var_dump($resultado);
+    
     $usuario = mysqli_fetch_assoc($resultado);
    
     return $usuario;

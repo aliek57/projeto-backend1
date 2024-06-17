@@ -12,15 +12,21 @@
     <style>
         body {
             background-color: rgba(236, 101, 0, .5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
         .container {
             background-color: #ffffff;
             border-radius: 10px;
             padding: 20px;
-            margin-top: 50px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 1200px;
         }
-        .title{
+        .title {
             text-align: center;
             color: rgba(236, 101, 0, 0.9);
             font-weight: bold;
@@ -39,11 +45,27 @@
             border-color: #ec6500;
             box-shadow: none;
         }
+        table {
+            width: 100%;
+        }
+        th, td {
+            text-align: start;
+            padding: 8px;
+            border: 1px solid #ddd;
+            white-space: nowrap; 
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2 class="mt-3 title">Formulário de consumo de energia</h2>
+        <h2 class="mt-3 title">Formulário de Consumo de Energia</h2>
         <a href="inserir.php" class="btn btn-primary mb-3">Adicionar Cliente</a>
         <div class="table-responsive">
             <table class="table table-bordered">
